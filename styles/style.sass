@@ -1,0 +1,207 @@
+html
+    background-color: #10284b
+    color: white
+
+body 
+    .home-header 
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        img 
+            width: 7rem
+        nav
+            a
+                padding-right: 2rem
+                font-family: "Space Mono", monospace
+                text-decoration: none
+                color: #b5b9c0
+                span
+                    color: #24e7fc
+                .resume
+                    border: 1px solid #24e7fc
+                    border-radius: 9px
+                    padding: 0.5rem
+
+    .about-container
+        width: 80rem
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-top: 3rem
+        
+        h4
+            font-family: "Space Mono", monospace
+            margin: 0px
+            width: 50rem
+            color: #24e7fc
+        
+        h1
+            font-family: "Work Sans", sans-serif
+            font-size: 6em
+            margin: 0px
+            width: 50rem
+            opacity: 0.7
+
+        h3
+            font-family: "Space Mono", monospace
+            font-size: 3rem
+            margin: 0px
+            opacity: 0.5
+
+        p
+            font-size: 1.2em
+            font-family: "Space Mono", monospace
+            margin: 0px
+            margin-top: 2rem
+            width: 50rem
+            opacity: 0.5
+        
+    .skills-container
+        margin-top: 1rem
+
+        h1
+            margin-bottom: 0
+            font-size: 2em
+            margin-top: 1.5em
+        
+        ul
+            font-size: 3em
+            list-style-type: none
+            display: flex
+            margin: 0
+            padding: 0
+            padding-top: 0.4em
+            width: 50rem
+            flex-wrap: wrap
+
+            li
+                padding: 0.5em
+                padding-top: 0
+                padding-bottom: 3rem
+
+                .fa-html5
+                    color: #ff7000
+                
+                .fa-css3-alt
+                    color: #4b97ff
+
+                .fa-js
+                    color: #f7df00
+                    background-color: black
+                
+                .fa-react
+                    color: #52e3ff
+
+                img
+                    width: 55px
+
+    .social-container
+        width: 40px
+        position: fixed
+        bottom: 0px
+        left: 40px
+        right: auto
+        z-index: 10
+        font-size: 1.5rem
+
+        ul
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 0px
+            padding: 0px
+            list-style: none
+
+            li
+                padding-left: 1em
+                padding-right: 1em
+
+            li ::after
+                content: ""
+                display: block
+                width: 1px
+                height: 50px
+                margin: 0px auto
+                background-color: white
+
+                i 
+                    font-weight: 400
+    
+    .projects-container
+        display: flex
+        width: 50rem
+        margin: 0 auto
+        justify-content: space-between
+        flex-direction: column
+        font-family: "Work Sans", sans-serif
+
+        h1
+            margin-bottom: 0
+            font-size: 2em
+            width: 50rem
+            margin: 0 auto
+            opacity: 0.7
+            font-family: "Work Sans", sans-serif
+        
+        .projects-img-container
+            margin-top: 1.4rem
+            
+            img
+                margin-top: 1rem
+                width: 25rem
+                border-radius: 17px
+
+        .project-info
+            .title-container
+                display: flex
+                align-items: baseline
+                margin-top: 1rem
+                font-size: 1.5rem
+                font-family: 'Roboto', sans-serif
+                opacity: .8
+
+                h4
+                    font-size: 1.5rem
+                    color: #24e7fc
+                    margin-bottom: 0px
+                    width: 4rem
+                    font-family: 'Roboto', sans-serif
+
+                h5
+                    margin-top: 0.5rem
+                    margin-bottom: 1rem
+                    font-size: 1.4rem
+                    line-height: 1.8rem
+                    font-family: 'Roboto', sans-serif
+
+            .description-container
+                h4
+                    font-size: 1.5rem
+                    color: #24e7fc
+                    margin-bottom: 0px
+                    font-family: 'Roboto', sans-serif
+                    
+                p
+                    margin-top: 0.5rem
+                    font-size: 1.3rem
+                    opacity: .8
+                    line-height: 1.8rem
+                    font-family: 'Roboto', sans-serif
+
+            .github
+                font-family: 'Roboto', sans-serif
+                opacity: .8
+                
+                a
+                    color: #24e7fc
+                    
+                
+            .deploy
+                font-family: 'Roboto', sans-serif
+                opacity: .8
+
+                a
+                    color: #24e7fc
