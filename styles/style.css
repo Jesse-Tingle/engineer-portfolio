@@ -97,6 +97,9 @@ body .skills-container ul li .fa-js {
 body .skills-container ul li .fa-react {
   color: #52e3ff;
 }
+body .skills-container ul li .lessLogo {
+  filter: invert(70%) sepia(1%) saturate(3091%) hue-rotate(297deg) brightness(147%) contrast(129%);
+}
 body .skills-container ul li img {
   width: 55px;
 }
@@ -148,35 +151,49 @@ body .projects-container h1 {
   opacity: 0.7;
   font-family: "Work Sans", sans-serif;
 }
-body .projects-container .projects-img-container {
-  margin-top: 1.4rem;
+body .projects-container .idv-project {
+  border: 1px solid #24e7fc;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 20px;
 }
-body .projects-container .projects-img-container img {
-  margin-top: 1rem;
-  width: 25rem;
-  border-radius: 17px;
-}
-body .projects-container .project-info .title-container {
+body .projects-container .idv-project .title-container {
   display: flex;
   align-items: baseline;
-  margin-top: 1rem;
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   opacity: 0.8;
 }
-body .projects-container .project-info .title-container h4 {
+body .projects-container .idv-project .title-container h4 {
   font-size: 1.5rem;
   color: #24e7fc;
   margin-bottom: 0px;
   width: 4rem;
   font-family: "Roboto", sans-serif;
 }
-body .projects-container .project-info .title-container h5 {
+body .projects-container .idv-project .title-container h5 {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-family: "Roboto", sans-serif;
+}
+body .projects-container .projects-img-container {
+  display: flex;
+  justify-content: space-between;
+}
+body .projects-container .projects-img-container img {
+  width: 15rem;
+  border-radius: 17px;
+}
+body .projects-container .gp-img {
+  flex-wrap: wrap;
+}
+body .projects-container .gp-img .child-profile {
+  margin-top: 1rem;
+}
+body .projects-container .project-info .description-container {
+  margin-top: 1rem;
 }
 body .projects-container .project-info .description-container h4 {
   font-size: 1.5rem;
@@ -185,6 +202,7 @@ body .projects-container .project-info .description-container h4 {
   font-family: "Roboto", sans-serif;
 }
 body .projects-container .project-info .description-container p {
+  width: 45rem;
   margin-top: 0.5rem;
   font-size: 1.3rem;
   opacity: 0.8;

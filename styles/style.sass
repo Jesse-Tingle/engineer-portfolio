@@ -95,6 +95,9 @@ body
                 .fa-react
                     color: #52e3ff
 
+                .lessLogo
+                    filter: invert(70%) sepia(1%) saturate(3091%) hue-rotate(297deg) brightness(147%) contrast(129%)
+
                 img
                     width: 55px
 
@@ -145,20 +148,16 @@ body
             margin: 0 auto
             opacity: 0.7
             font-family: "Work Sans", sans-serif
-        
-        .projects-img-container
-            margin-top: 1.4rem
-            
-            img
-                margin-top: 1rem
-                width: 25rem
-                border-radius: 17px
 
-        .project-info
+        .idv-project
+            border: 1px solid #24e7fc
+            margin-bottom: 1.5rem
+            padding: 1.5rem
+            border-radius: 20px
+
             .title-container
                 display: flex
                 align-items: baseline
-                margin-top: 1rem
                 font-size: 1.5rem
                 font-family: 'Roboto', sans-serif
                 opacity: .8
@@ -176,8 +175,25 @@ body
                     font-size: 1.4rem
                     line-height: 1.8rem
                     font-family: 'Roboto', sans-serif
+        
+        .projects-img-container
+            display: flex
+            justify-content: space-between
+            
+            img
+                width: 15rem
+                border-radius: 17px
 
+        .gp-img
+            flex-wrap: wrap
+
+            .child-profile
+                margin-top: 1rem
+
+        .project-info
             .description-container
+                margin-top: 1rem
+
                 h4
                     font-size: 1.5rem
                     color: #24e7fc
@@ -185,6 +201,7 @@ body
                     font-family: 'Roboto', sans-serif
                     
                 p
+                    width: 45rem
                     margin-top: 0.5rem
                     font-size: 1.3rem
                     opacity: .8
