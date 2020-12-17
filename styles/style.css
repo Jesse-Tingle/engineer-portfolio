@@ -9,10 +9,13 @@ html {
   }
 }
 
+body {
+  margin: 8px;
+}
+
 @media only screen and (max-width: 500px) {
   body {
     max-width: 500px;
-    border: 2px solid red;
   }
 }
 
@@ -64,14 +67,14 @@ body .home-header nav a .resume {
 body .menu-wrap {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 103px;
   z-index: 1;
 }
 
 body .menu-wrap .toggler {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 25px;
   z-index: 2;
   cursor: pointer;
   width: 50px;
@@ -82,7 +85,7 @@ body .menu-wrap .toggler {
 body .menu-wrap .hamburger {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -86px;
   z-index: 1;
   width: 60px;
   height: 60px;
@@ -162,8 +165,8 @@ body .menu-wrap .toggler:checked ~ .menu div div {
 body .menu-wrap .menu {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 100%;
+  right: 70px;
+  width: 90%;
   height: 100%;
   visibility: hidden;
   overflow: hidden;
@@ -250,22 +253,14 @@ body .main-container {
 
 @media only screen and (max-width: 500px) {
   body .main-container {
-    max-width: 500px;
+    max-width: 780px;
+    margin-left: 5em;
   }
 }
 
 @media only screen and (max-width: 500px) {
   body .main-container .about-container {
-    max-width: 395px;
-    margin: 0em 11em 0em 4em;
-    border: 3px solid white;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  body .main-container {
-    max-width: 500px;
-    border: 3px solid green;
+    max-width: 40em;
   }
 }
 
@@ -323,7 +318,7 @@ body .main-container p {
 @media only screen and (max-width: 500px) {
   body .main-container p {
     font-size: 1.2em;
-    width: 24rem;
+    width: 40rem;
   }
 }
 
@@ -331,10 +326,22 @@ body .skills-container {
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 500px) {
+  body .skills-container {
+    width: 40rem;
+  }
+}
+
 body .skills-container h1 {
   margin-bottom: 0;
   font-size: 2.5em;
   margin-top: 1.5em;
+}
+
+@media only screen and (max-width: 500px) {
+  body .skills-container h1 {
+    width: 25rem;
+  }
 }
 
 body .skills-container ul {
@@ -451,6 +458,12 @@ body .projects-container {
   font-family: "Work Sans", sans-serif;
 }
 
+@media only screen and (max-width: 500px) {
+  body .projects-container {
+    width: 40rem;
+  }
+}
+
 body .projects-container h1 {
   padding-bottom: .2em;
   font-size: 2.5em;
@@ -509,6 +522,13 @@ body .projects-container .projects-img-container img {
   border-radius: 17px;
 }
 
+@media only screen and (max-width: 500px) {
+  body .projects-container .projects-img-container img {
+    width: 50vw;
+    height: 40vw;
+  }
+}
+
 body .projects-container .gp-img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -536,6 +556,12 @@ body .projects-container .project-info .description-container p {
   opacity: .8;
   line-height: 1.8rem;
   font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+  body .projects-container .project-info .description-container p {
+    width: 40rem;
+  }
 }
 
 body .projects-container .project-info .github {
@@ -570,6 +596,12 @@ body #contact {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Work Sans", sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+  body #contact {
+    width: 40rem;
+  }
 }
 
 body #contact h1 {
