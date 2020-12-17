@@ -2,6 +2,10 @@ html
     background-color: #10284b
     color: white
 
+@media only screen and (max-width: 500px)
+    html
+        max-width: 500px
+
 body 
     .home-header 
         display: flex
@@ -10,6 +14,27 @@ body
 
         img 
             width: 7rem
+
+        
+        nav
+            a
+                padding-right: 2rem
+                font-family: "Space Mono", monospace
+                text-decoration: none
+                color: #b5b9c0
+                span
+                    color: #24e7fc
+                .resume
+                    border: 1px solid #24e7fc
+                    border-radius: 9px
+                    padding: 0.5rem
+
+        @media only screen and (min-width: 501px)
+            .mobile-nav
+                display: none
+        @media only screen and (max-width: 500px)
+            .main-nav
+                display: none
 
     .menu-wrap
         position: fixed
