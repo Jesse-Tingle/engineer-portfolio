@@ -1,0 +1,381 @@
+html {
+  background-color: #10284b;
+  color: white;
+}
+
+body .home-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .home-header img {
+  width: 7rem;
+}
+
+body .home-header nav a {
+  padding-right: 2rem;
+  font-family: "Space Mono", monospace;
+  text-decoration: none;
+  color: #b5b9c0;
+}
+
+body .home-header nav a span {
+  color: #24e7fc;
+}
+
+body .home-header nav a .resume {
+  border: 1px solid #24e7fc;
+  border-radius: 9px;
+  padding: 0.5rem;
+}
+
+body .about-container {
+  width: 80rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+body .about-container h4 {
+  font-family: "Space Mono", monospace;
+  margin: 0px;
+  width: 50rem;
+  color: #24e7fc;
+}
+
+body .about-container h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 6em;
+  margin: 0px;
+  width: 50rem;
+  opacity: 0.7;
+}
+
+body .about-container h3 {
+  font-family: "Space Mono", monospace;
+  font-size: 3rem;
+  margin: 0px;
+  opacity: 0.5;
+}
+
+body .about-container p {
+  font-size: 1.2em;
+  font-family: "Space Mono", monospace;
+  margin: 0px;
+  margin-top: 2rem;
+  width: 50rem;
+  opacity: 0.5;
+}
+
+body .skills-container {
+  margin-top: 1rem;
+}
+
+body .skills-container h1 {
+  margin-bottom: 0;
+  font-size: 2.5em;
+  margin-top: 1.5em;
+}
+
+body .skills-container ul {
+  font-size: 3em;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.4em;
+  width: 50rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .skills-container ul li {
+  padding: 0.5em;
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+body .skills-container ul li .fa-html5 {
+  color: #ff7000;
+}
+
+body .skills-container ul li .fa-css3-alt {
+  color: #4b97ff;
+}
+
+body .skills-container ul li .fa-js {
+  color: #f7df00;
+  background-color: black;
+}
+
+body .skills-container ul li .fa-react {
+  color: #52e3ff;
+}
+
+body .skills-container ul li .lessLogo {
+  -webkit-filter: invert(70%) sepia(1%) saturate(3091%) hue-rotate(297deg) brightness(147%) contrast(129%);
+          filter: invert(70%) sepia(1%) saturate(3091%) hue-rotate(297deg) brightness(147%) contrast(129%);
+}
+
+body .skills-container ul li img {
+  width: 55px;
+}
+
+body .social-container {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  font-size: 1.5rem;
+}
+
+body .social-container .fab {
+  color: white;
+}
+
+body .social-container .fas {
+  color: white;
+}
+
+body .social-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+body .social-container ul li {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+body .social-container ul li ::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 50px;
+  margin: 0px auto;
+  background-color: white;
+}
+
+body .social-container ul li ::after i {
+  font-weight: 400;
+}
+
+body .projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50rem;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Work Sans", sans-serif;
+}
+
+body .projects-container h1 {
+  padding-bottom: .2em;
+  font-size: 2.5em;
+  width: 50rem;
+  margin: 0 auto;
+  opacity: 0.7;
+  font-family: "Work Sans", sans-serif;
+}
+
+body .projects-container .idv-project {
+  border-top: 3px solid #24e7fc;
+  margin-bottom: 1.5rem;
+}
+
+body .projects-container .idv-project .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  opacity: .8;
+  padding-top: .5em;
+}
+
+body .projects-container .idv-project .title-container h4 {
+  font-size: 1.5rem;
+  color: #24e7fc;
+  margin-bottom: 0px;
+  width: 4rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+body .projects-container .idv-project .title-container h5 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+body .projects-container .projects-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .projects-container .projects-img-container img {
+  width: 15rem;
+  border-radius: 17px;
+}
+
+body .projects-container .gp-img {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .projects-container .gp-img .child-profile {
+  margin-top: 1rem;
+}
+
+body .projects-container .project-info .description-container {
+  margin-top: 1rem;
+}
+
+body .projects-container .project-info .description-container h4 {
+  font-size: 1.5rem;
+  color: #24e7fc;
+  margin-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body .projects-container .project-info .description-container p {
+  width: 45rem;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  opacity: .8;
+  line-height: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+body .projects-container .project-info .github {
+  font-family: 'Roboto', sans-serif;
+  opacity: .8;
+}
+
+body .projects-container .project-info .github a {
+  color: #24e7fc;
+}
+
+body .projects-container .project-info .deploy {
+  font-family: 'Roboto', sans-serif;
+  opacity: .8;
+}
+
+body .projects-container .project-info .deploy a {
+  color: #24e7fc;
+}
+
+body #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50rem;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Work Sans", sans-serif;
+}
+
+body #contact h1 {
+  margin-top: 3em;
+  padding-bottom: .2em;
+  font-size: 2.5em;
+  width: 50rem;
+  opacity: 0.7;
+  font-family: "Work Sans", sans-serif;
+}
+
+body #contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+body #contact form input {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+  border-radius: 17px;
+  height: 3em;
+  padding-left: 0.5em;
+}
+
+body #contact form textarea {
+  font-size: 1.4em;
+  border-radius: 10px;
+  padding-left: .5em;
+  padding-top: .5em;
+  font-family: 'Roboto';
+}
+
+body #contact form button {
+  width: 39%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 2em;
+  margin-top: 1em;
+  background-color: #24e7fc;
+  border: none;
+  color: #10284b;
+  font-family: 'Roboto';
+  font-size: 1.3em;
+}
+/*# sourceMappingURL=style.css.map */
