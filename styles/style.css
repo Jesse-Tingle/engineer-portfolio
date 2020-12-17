@@ -505,6 +505,7 @@ body .projects-container .projects-img-container {
 
 body .projects-container .projects-img-container img {
   width: 60vw;
+  height: 45vw;
   border-radius: 17px;
 }
 
