@@ -9,6 +9,13 @@ html {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  body {
+    max-width: 500px;
+    border: 2px solid red;
+  }
+}
+
 body .home-header {
   display: -webkit-box;
   display: -ms-flexbox;
