@@ -5,21 +5,22 @@ html {
 
 @media only screen and (max-width: 500px) {
   html {
-    max-width: 500px;
+    max-width: 493px;
   }
 }
 
-body {
+html body {
   margin: 8px;
 }
 
 @media only screen and (max-width: 500px) {
-  body {
+  html body {
     max-width: 500px;
+    margin: 0;
   }
 }
 
-body .home-header {
+html body .home-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,50 +32,61 @@ body .home-header {
           align-items: center;
 }
 
-body .home-header img {
+@media only screen and (max-width: 500px) {
+  html body .home-header {
+    background-color: #10284b;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+html body .home-header img {
   width: 7rem;
 }
 
-body .home-header nav a {
+html body .home-header nav
+a {
   padding-right: 2rem;
   font-family: "Space Mono", monospace;
   text-decoration: none;
   color: #b5b9c0;
 }
 
-body .home-header nav a span {
+html body .home-header span {
   color: #24e7fc;
 }
 
-body .home-header nav a .resume {
+html body .home-header .resume {
   border: 1px solid #24e7fc;
   border-radius: 9px;
   padding: 0.5rem;
 }
 
 @media only screen and (min-width: 501px) {
-  body .home-header .mobile-nav {
+  html body .home-header .mobile-nav {
     display: none;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  body .home-header .main-nav {
+  html body .home-header .main-nav {
     display: none;
   }
 }
 
-body .menu-wrap {
+html body .home-header .menu-wrap {
   position: fixed;
   top: 0;
-  right: 103px;
+  right: 239px;
   z-index: 1;
 }
 
-body .menu-wrap .toggler {
+html body .home-header .menu-wrap .toggler {
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: 17px;
+  right: -212px;
   z-index: 2;
   cursor: pointer;
   width: 50px;
@@ -82,10 +94,10 @@ body .menu-wrap .toggler {
   opacity: 0;
 }
 
-body .menu-wrap .hamburger {
+html body .home-header .menu-wrap .hamburger {
   position: absolute;
   top: 0;
-  right: -86px;
+  right: -227px;
   z-index: 1;
   width: 60px;
   height: 60px;
@@ -101,7 +113,7 @@ body .menu-wrap .hamburger {
           justify-content: center;
 }
 
-body .menu-wrap .hamburger div {
+html body .home-header .menu-wrap .hamburger div {
   position: relative;
   width: 100%;
   height: 2px;
@@ -119,7 +131,7 @@ body .menu-wrap .hamburger div {
   transition: all 0.4s ease;
 }
 
-body .menu-wrap .hamburger div:before, body .menu-wrap .hamburger :after {
+html body .home-header .menu-wrap div:before, html body .home-header .menu-wrap :after {
   content: '';
   position: absolute;
   z-index: 1;
@@ -129,44 +141,44 @@ body .menu-wrap .hamburger div:before, body .menu-wrap .hamburger :after {
   background: inherit;
 }
 
-body .menu-wrap .hamburger div:after {
+html body .home-header .menu-wrap div:after {
   top: 10px;
 }
 
-body .menu-wrap .toggler:checked + .hamburger > div {
+html body .home-header .menu-wrap .toggler:checked + .hamburger > div {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
 }
 
-body .menu-wrap .toggler:checked + .hamburger > div:before,
-body .menu-wrap .toggler:checked + .hamburger > div:after {
+html body .home-header .menu-wrap .toggler:checked + .hamburger > div:before,
+html body .home-header .menu-wrap .toggler:checked + .hamburger > div:after {
   top: 0;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-body .menu-wrap .toggler:checked ~ .menu {
+html body .home-header .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
 }
 
-body .menu-wrap .toggler:checked ~ .menu div {
+html body .home-header .menu-wrap .toggler:checked ~ .menu div {
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition-duration: scale 1.5s ease;
           transition-duration: scale 1.5s ease;
 }
 
-body .menu-wrap .toggler:checked ~ .menu div div {
+html body .home-header .menu-wrap .toggler:checked ~ .menu div div {
   opacity: 1;
   -webkit-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
 }
 
-body .menu-wrap .menu {
+html body .home-header .menu-wrap .menu {
   position: fixed;
   top: 0;
-  right: 70px;
-  width: 90%;
+  right: 0px;
+  width: 100%;
   height: 100%;
   visibility: hidden;
   overflow: hidden;
@@ -181,7 +193,7 @@ body .menu-wrap .menu {
           justify-content: center;
 }
 
-body .menu-wrap .menu div {
+html body .home-header .menu-wrap .menu div {
   background-color: #10284b;
   opacity: 0.9;
   border-radius: 50%;
@@ -205,7 +217,7 @@ body .menu-wrap .menu div {
   transition: all 0.4s ease;
 }
 
-body .menu-wrap .menu div div {
+html body .home-header .menu-wrap .menu div div {
   max-width: 90vw;
   max-height: 100vw;
   opacity: 0;
@@ -213,14 +225,14 @@ body .menu-wrap .menu div div {
   transition: opacity 0.4s ease;
 }
 
-body .menu-wrap .menu div div ul li {
+html body .home-header .menu-wrap .menu div div ul li {
   list-style: none;
   color: white;
   font-size: 1.5rem;
   padding: 1rem;
 }
 
-body .menu-wrap .menu div div ul li a {
+html body .home-header .menu-wrap .menu div div ul li a {
   font-family: "Space Mono", monospace;
   text-decoration: none;
   color: #b5b9c0;
@@ -228,11 +240,11 @@ body .menu-wrap .menu div div ul li a {
   transition: color 0.4s ease;
 }
 
-body .menu-wrap .menu div div ul li a span {
+html body .home-header .menu-wrap .menu div div ul li a span {
   color: #24e7fc;
 }
 
-body .main-container {
+html body .main-container {
   width: 80rem;
   margin: 0 auto;
   display: -webkit-box;
@@ -252,19 +264,19 @@ body .main-container {
 }
 
 @media only screen and (max-width: 500px) {
-  body .main-container {
-    max-width: 780px;
+  html body .main-container {
+    max-width: 24em;
     margin-left: 5em;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  body .main-container .about-container {
-    max-width: 40em;
+  html body .main-container .about-container {
+    margin-top: 6em;
   }
 }
 
-body .main-container h4 {
+html body .main-container .about-container h4 {
   font-family: "Space Mono", monospace;
   margin: 0px;
   width: 50rem;
@@ -272,12 +284,13 @@ body .main-container h4 {
 }
 
 @media only screen and (max-width: 500px) {
-  body .main-container h4 {
-    font-size: 1.2rem;
+  html body .main-container .about-container h4 {
+    font-size: 1rem;
+    width: 11rem;
   }
 }
 
-body .main-container h1 {
+html body .main-container .about-container h1 {
   font-family: "Work Sans", sans-serif;
   font-size: 6em;
   margin: 0px;
@@ -286,13 +299,13 @@ body .main-container h1 {
 }
 
 @media only screen and (max-width: 500px) {
-  body .main-container h1 {
-    width: 25rem;
+  html body .main-container .about-container h1 {
+    width: 19rem;
     font-size: 3em;
   }
 }
 
-body .main-container h3 {
+html body .main-container .about-container h3 {
   font-family: "Space Mono", monospace;
   font-size: 3rem;
   margin: 0px;
@@ -300,13 +313,13 @@ body .main-container h3 {
 }
 
 @media only screen and (max-width: 500px) {
-  body .main-container h3 {
-    font-size: 1.5rem;
+  html body .main-container .about-container h3 {
+    font-size: 1.2rem;
     width: 17em;
   }
 }
 
-body .main-container p {
+html body .main-container .about-container p {
   font-size: 1.2em;
   font-family: "Space Mono", monospace;
   margin: 0px;
@@ -316,35 +329,38 @@ body .main-container p {
 }
 
 @media only screen and (max-width: 500px) {
-  body .main-container p {
-    font-size: 1.2em;
-    width: 40rem;
+  html body .main-container .about-container p {
+    font-size: 1em;
+    width: 24rem;
   }
 }
 
-body .skills-container {
+html body .main-container .skills-container {
   margin-top: 1rem;
 }
 
 @media only screen and (max-width: 500px) {
-  body .skills-container {
-    width: 40rem;
+  html body .main-container .skills-container {
+    width: 24rem;
   }
 }
 
-body .skills-container h1 {
+html body .main-container .skills-container h1 {
   margin-bottom: 0;
   font-size: 2.5em;
   margin-top: 1.5em;
+  opacity: 0.7;
+  font-family: "Work Sans", sans-serif;
 }
 
 @media only screen and (max-width: 500px) {
-  body .skills-container h1 {
-    width: 25rem;
+  html body .main-container .skills-container h1 {
+    width: 20rem;
+    font-size: 2em;
   }
 }
 
-body .skills-container ul {
+html body .main-container .skills-container ul {
   font-size: 3em;
   list-style-type: none;
   display: -webkit-box;
@@ -358,39 +374,45 @@ body .skills-container ul {
       flex-wrap: wrap;
 }
 
-body .skills-container ul li {
+@media only screen and (max-width: 500px) {
+  html body .main-container .skills-container ul {
+    width: 24rem;
+  }
+}
+
+html body .main-container .skills-container li {
   padding: 0.5em;
   padding-top: 0;
   padding-bottom: 3rem;
 }
 
-body .skills-container ul li .fa-html5 {
+html body .main-container .skills-container .fa-html5 {
   color: #ff7000;
 }
 
-body .skills-container ul li .fa-css3-alt {
+html body .main-container .skills-container .fa-css3-alt {
   color: #4b97ff;
 }
 
-body .skills-container ul li .fa-js {
+html body .main-container .skills-container .fa-js {
   color: #f7df00;
   background-color: black;
 }
 
-body .skills-container ul li .fa-react {
+html body .main-container .skills-container .fa-react {
   color: #52e3ff;
 }
 
-body .skills-container ul li .lessLogo {
+html body .main-container .skills-container .lessLogo {
   -webkit-filter: invert(70%) sepia(1%) saturate(3091%) hue-rotate(297deg) brightness(147%) contrast(129%);
           filter: invert(70%) sepia(1%) saturate(3091%) hue-rotate(297deg) brightness(147%) contrast(129%);
 }
 
-body .skills-container ul li img {
+html body .main-container .skills-container img {
   width: 55px;
 }
 
-body .social-container {
+html body .main-container .social-container {
   width: 40px;
   position: fixed;
   bottom: 0px;
@@ -400,15 +422,22 @@ body .social-container {
   font-size: 1.5rem;
 }
 
-body .social-container .fab {
+@media only screen and (max-width: 500px) {
+  html body .main-container .social-container {
+    left: 18px;
+  }
+}
+
+html body .main-container .social-container .fab {
   color: white;
 }
 
-body .social-container .fas {
+html body .main-container .social-container .fas {
   color: white;
+  font-weight: 900;
 }
 
-body .social-container ul {
+html body .main-container .social-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,12 +453,12 @@ body .social-container ul {
   list-style: none;
 }
 
-body .social-container ul li {
+html body .main-container .social-container ul li {
   padding-left: 1em;
   padding-right: 1em;
 }
 
-body .social-container ul li ::after {
+html body .main-container .social-container ul li ::after {
   content: "";
   display: block;
   width: 1px;
@@ -438,11 +467,11 @@ body .social-container ul li ::after {
   background-color: white;
 }
 
-body .social-container ul li ::after i {
+html body .main-container .social-container ul i {
   font-weight: 400;
 }
 
-body .projects-container {
+html body .main-container .projects-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,12 +488,12 @@ body .projects-container {
 }
 
 @media only screen and (max-width: 500px) {
-  body .projects-container {
-    width: 40rem;
+  html body .main-container .projects-container {
+    width: 24rem;
   }
 }
 
-body .projects-container h1 {
+html body .main-container .projects-container h1 {
   padding-bottom: .2em;
   font-size: 2.5em;
   width: 50rem;
@@ -473,12 +502,25 @@ body .projects-container h1 {
   font-family: "Work Sans", sans-serif;
 }
 
-body .projects-container .idv-project {
+@media only screen and (max-width: 500px) {
+  html body .main-container .projects-container h1 {
+    font-size: 2em;
+    width: 24rem;
+  }
+}
+
+html body .main-container .projects-container .idv-project {
   border-top: 3px solid #24e7fc;
   margin-bottom: 1.5rem;
 }
 
-body .projects-container .idv-project .title-container {
+@media only screen and (max-width: 500px) {
+  html body .main-container .projects-container .idv-project {
+    width: 24em;
+  }
+}
+
+html body .main-container .projects-container .idv-project .title-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,7 +533,7 @@ body .projects-container .idv-project .title-container {
   padding-top: .5em;
 }
 
-body .projects-container .idv-project .title-container h4 {
+html body .main-container .projects-container .idv-project .title-container h4 {
   font-size: 1.5rem;
   color: #24e7fc;
   margin-bottom: 0px;
@@ -499,7 +541,7 @@ body .projects-container .idv-project .title-container h4 {
   font-family: 'Roboto', sans-serif;
 }
 
-body .projects-container .idv-project .title-container h5 {
+html body .main-container .projects-container .idv-project .title-container h5 {
   margin-top: 0.5rem;
   margin-bottom: 1rem;
   font-size: 1.4rem;
@@ -507,7 +549,7 @@ body .projects-container .idv-project .title-container h5 {
   font-family: 'Roboto', sans-serif;
 }
 
-body .projects-container .projects-img-container {
+html body .main-container .projects-container .idv-project .projects-img-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -516,73 +558,92 @@ body .projects-container .projects-img-container {
           justify-content: space-between;
 }
 
-body .projects-container .projects-img-container img {
-  width: 60vw;
-  height: 45vw;
+@media only screen and (max-width: 500px) {
+  html body .main-container .projects-container .idv-project .projects-img-container {
+    width: 17em;
+  }
+}
+
+html body .main-container .projects-container .idv-project .projects-img-container img {
+  width: 30%;
   border-radius: 17px;
 }
 
 @media only screen and (max-width: 500px) {
-  body .projects-container .projects-img-container img {
+  html body .main-container .projects-container .idv-project .projects-img-container img {
     width: 50vw;
     height: 40vw;
   }
 }
 
-body .projects-container .gp-img {
+html body .main-container .projects-container .idv-project .gp-img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-body .projects-container .gp-img .child-profile {
+html body .main-container .projects-container .idv-project .project-info
+.description-container {
   margin-top: 1rem;
 }
 
-body .projects-container .project-info .description-container {
-  margin-top: 1rem;
-}
-
-body .projects-container .project-info .description-container h4 {
+html body .main-container .projects-container .idv-project .project-info
+.description-container h4 {
   font-size: 1.5rem;
   color: #24e7fc;
   margin-bottom: 0px;
   font-family: 'Roboto', sans-serif;
 }
 
-body .projects-container .project-info .description-container p {
+html body .main-container .projects-container .idv-project .project-info
+.description-container p {
   width: 45rem;
   margin-top: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
   opacity: .8;
   line-height: 1.8rem;
   font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (max-width: 500px) {
-  body .projects-container .project-info .description-container p {
-    width: 40rem;
+  html body .main-container .projects-container .idv-project .project-info
+.description-container p {
+    width: 24rem;
   }
 }
 
-body .projects-container .project-info .github {
+html body .main-container .projects-container .idv-project .github {
   font-family: 'Roboto', sans-serif;
   opacity: .8;
 }
 
-body .projects-container .project-info .github a {
-  color: #24e7fc;
+html body .main-container .projects-container .idv-project .github span {
+  font-weight: 700;
+  font-size: 1.02rem;
+  text-decoration: underline;
 }
 
-body .projects-container .project-info .deploy {
+html body .main-container .projects-container .idv-project .github a {
+  color: #24e7fc;
+  text-decoration: none;
+}
+
+html body .main-container .projects-container .idv-project .deploy {
   font-family: 'Roboto', sans-serif;
   opacity: .8;
 }
 
-body .projects-container .project-info .deploy a {
-  color: #24e7fc;
+html body .main-container .projects-container .idv-project .deploy span {
+  font-weight: 700;
+  font-size: 1.02rem;
+  text-decoration: underline;
 }
 
-body #contact {
+html body .main-container .projects-container .idv-project .deploy a {
+  color: #24e7fc;
+  text-decoration: none;
+}
+
+html body .main-container #contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,12 +660,12 @@ body #contact {
 }
 
 @media only screen and (max-width: 500px) {
-  body #contact {
-    width: 40rem;
+  html body .main-container #contact {
+    width: 23rem;
   }
 }
 
-body #contact h1 {
+html body .main-container #contact h1 {
   margin-top: 3em;
   padding-bottom: .2em;
   font-size: 2.5em;
@@ -613,7 +674,15 @@ body #contact h1 {
   font-family: "Work Sans", sans-serif;
 }
 
-body #contact form {
+@media only screen and (max-width: 500px) {
+  html body .main-container #contact h1 {
+    margin-top: 1em;
+    font-size: 2em;
+    width: 24rem;
+  }
+}
+
+html body .main-container #contact form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,7 +693,7 @@ body #contact form {
   width: 100%;
 }
 
-body #contact form input {
+html body .main-container #contact form input {
   font-size: 1.4em;
   margin-bottom: 1em;
   border-radius: 17px;
@@ -632,7 +701,7 @@ body #contact form input {
   padding-left: 0.5em;
 }
 
-body #contact form textarea {
+html body .main-container #contact form textarea {
   font-size: 1.4em;
   border-radius: 10px;
   padding-left: .5em;
@@ -640,7 +709,7 @@ body #contact form textarea {
   font-family: 'Roboto';
 }
 
-body #contact form button {
+html body .main-container #contact form button {
   width: 39%;
   margin: 0 auto;
   border-radius: 10px;
@@ -648,8 +717,14 @@ body #contact form button {
   margin-top: 1em;
   background-color: #24e7fc;
   border: none;
-  color: #10284b;
+  color: white;
   font-family: 'Roboto';
   font-size: 1.3em;
+}
+
+@media only screen and (max-width: 500px) {
+  html body .main-container #contact form button {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
