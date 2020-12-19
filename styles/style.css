@@ -748,13 +748,7 @@ html body .main-container #contact form button {
 
 @media only screen and (max-width: 500px) {
   html body .main-container #contact form button {
-    width: 50%;
-  }
-}
-
-@media only screen and (max-width: 500px) and (max-width: 500px) {
-  html body .main-container #contact form button {
-    width: 64%;
+    width: 75%;
   }
 }
 /*# sourceMappingURL=style.css.map */
