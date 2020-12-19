@@ -265,14 +265,14 @@ html body .main-container {
 
 @media only screen and (max-width: 500px) {
   html body .main-container {
-    max-width: 24em;
-    margin-left: 5em;
+    max-width: 13em;
   }
 }
 
 @media only screen and (max-width: 500px) {
   html body .main-container .about-container {
     margin-top: 6em;
+    width: 13em;
   }
 }
 
@@ -300,8 +300,8 @@ html body .main-container .about-container h1 {
 
 @media only screen and (max-width: 500px) {
   html body .main-container .about-container h1 {
-    width: 19rem;
-    font-size: 3em;
+    width: 15rem;
+    font-size: 2.4em;
   }
 }
 
@@ -314,7 +314,7 @@ html body .main-container .about-container h3 {
 
 @media only screen and (max-width: 500px) {
   html body .main-container .about-container h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 17em;
   }
 }
@@ -331,7 +331,7 @@ html body .main-container .about-container p {
 @media only screen and (max-width: 500px) {
   html body .main-container .about-container p {
     font-size: 1em;
-    width: 24rem;
+    width: 16rem;
   }
 }
 
@@ -341,7 +341,7 @@ html body .main-container .skills-container {
 
 @media only screen and (max-width: 500px) {
   html body .main-container .skills-container {
-    width: 24rem;
+    width: 13rem;
   }
 }
 
@@ -355,7 +355,7 @@ html body .main-container .skills-container h1 {
 
 @media only screen and (max-width: 500px) {
   html body .main-container .skills-container h1 {
-    width: 20rem;
+    width: 7rem;
     font-size: 2em;
   }
 }
@@ -376,7 +376,7 @@ html body .main-container .skills-container ul {
 
 @media only screen and (max-width: 500px) {
   html body .main-container .skills-container ul {
-    width: 24rem;
+    width: 17rem;
   }
 }
 
@@ -410,6 +410,12 @@ html body .main-container .skills-container .lessLogo {
 
 html body .main-container .skills-container img {
   width: 55px;
+}
+
+@media only screen and (max-width: 500px) {
+  html body .main-container .skills-container img {
+    width: 35px;
+  }
 }
 
 html body .main-container .social-container {
@@ -489,7 +495,7 @@ html body .main-container .projects-container {
 
 @media only screen and (max-width: 500px) {
   html body .main-container .projects-container {
-    width: 24rem;
+    width: 13rem;
   }
 }
 
@@ -505,7 +511,7 @@ html body .main-container .projects-container h1 {
 @media only screen and (max-width: 500px) {
   html body .main-container .projects-container h1 {
     font-size: 2em;
-    width: 24rem;
+    width: 13rem;
   }
 }
 
@@ -516,7 +522,7 @@ html body .main-container .projects-container .idv-project {
 
 @media only screen and (max-width: 500px) {
   html body .main-container .projects-container .idv-project {
-    width: 24em;
+    width: 17em;
   }
 }
 
@@ -549,6 +555,12 @@ html body .main-container .projects-container .idv-project .title-container h5 {
   font-family: 'Roboto', sans-serif;
 }
 
+@media only screen and (max-width: 500px) {
+  html body .main-container .projects-container .idv-project .title-container h5 {
+    font-size: 1.2rem;
+  }
+}
+
 html body .main-container .projects-container .idv-project .projects-img-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,7 +572,7 @@ html body .main-container .projects-container .idv-project .projects-img-contain
 
 @media only screen and (max-width: 500px) {
   html body .main-container .projects-container .idv-project .projects-img-container {
-    width: 17em;
+    width: 12em;
   }
 }
 
@@ -607,7 +619,7 @@ html body .main-container .projects-container .idv-project .project-info
 @media only screen and (max-width: 500px) {
   html body .main-container .projects-container .idv-project .project-info
 .description-container p {
-    width: 24rem;
+    width: 16rem;
   }
 }
 
@@ -661,7 +673,7 @@ html body .main-container #contact {
 
 @media only screen and (max-width: 500px) {
   html body .main-container #contact {
-    width: 23rem;
+    width: 17rem;
   }
 }
 
@@ -678,7 +690,7 @@ html body .main-container #contact h1 {
   html body .main-container #contact h1 {
     margin-top: 1em;
     font-size: 2em;
-    width: 24rem;
+    width: 8rem;
   }
 }
 
@@ -701,12 +713,24 @@ html body .main-container #contact form input {
   padding-left: 0.5em;
 }
 
+@media only screen and (max-width: 500px) {
+  html body .main-container #contact form input {
+    font-size: 1.2em;
+  }
+}
+
 html body .main-container #contact form textarea {
   font-size: 1.4em;
   border-radius: 10px;
   padding-left: .5em;
   padding-top: .5em;
   font-family: 'Roboto';
+}
+
+@media only screen and (max-width: 500px) {
+  html body .main-container #contact form textarea {
+    font-size: 1.2em;
+  }
 }
 
 html body .main-container #contact form button {
@@ -725,6 +749,12 @@ html body .main-container #contact form button {
 @media only screen and (max-width: 500px) {
   html body .main-container #contact form button {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) and (max-width: 500px) {
+  html body .main-container #contact form button {
+    width: 64%;
   }
 }
 /*# sourceMappingURL=style.css.map */
