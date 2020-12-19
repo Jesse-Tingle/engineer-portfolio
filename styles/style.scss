@@ -366,7 +366,7 @@ body
 
                     @media only screen and (max-width: 500px) 
                         {
-                            width: 17rem;
+                            width: 19rem;
                         }
                 }
 
@@ -391,7 +391,23 @@ body
                         {color: #52e3ff;}
 
                     .lessLogo
-                        {filter: invert(70%) sepia(1%) saturate(3091%) hue-rotate(297deg) brightness(147%) contrast(129%);}
+                        {
+                            filter: invert(70%) sepia(1%) saturate(3091%) hue-rotate(297deg) brightness(147%) contrast(129%);
+                       
+                            @media only screen and (max-width: 500px) 
+                                {
+                                  width: 60px;  
+                                }
+                            
+                        }
+
+                    .redux, .sassLogo 
+                        {
+                            @media only screen and (max-width: 500px) 
+                                {
+                                  width: 46px;  
+                                }
+                        }
                     img
                         {
                             width: 55px;

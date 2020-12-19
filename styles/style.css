@@ -376,7 +376,7 @@ html body .main-container .skills-container ul {
 
 @media only screen and (max-width: 500px) {
   html body .main-container .skills-container ul {
-    width: 17rem;
+    width: 19rem;
   }
 }
 
@@ -406,6 +406,18 @@ html body .main-container .skills-container .fa-react {
 html body .main-container .skills-container .lessLogo {
   -webkit-filter: invert(70%) sepia(1%) saturate(3091%) hue-rotate(297deg) brightness(147%) contrast(129%);
           filter: invert(70%) sepia(1%) saturate(3091%) hue-rotate(297deg) brightness(147%) contrast(129%);
+}
+
+@media only screen and (max-width: 500px) {
+  html body .main-container .skills-container .lessLogo {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html body .main-container .skills-container .redux, html body .main-container .skills-container .sassLogo {
+    width: 46px;
+  }
 }
 
 html body .main-container .skills-container img {
