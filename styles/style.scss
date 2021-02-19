@@ -1,0 +1,748 @@
+html
+    {
+        background-color: #10284b;
+        color: white;
+
+        @media only screen and (max-width: 500px)
+            {max-width: 493px;}
+    
+body
+    {
+        margin: 8px;
+
+        @media only screen and (max-width: 500px)
+            {
+                max-width: 500px;
+                margin: 0
+            }
+    
+    .home-header 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        @media only screen and (max-width: 500px)
+            {
+                background-color: #10284b;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+            }
+
+        img 
+            {
+                width: 7rem;
+            }
+
+        
+        nav
+            a
+                {
+                    padding-right: 2rem;
+                    font-family: "Space Mono", monospace;
+                    text-decoration: none;
+                    color: #b5b9c0;
+                }
+
+                span
+                    {
+                        color: #24e7fc;
+                    }
+
+                .resume
+                    {
+                        border: 1px solid #24e7fc;
+                        border-radius: 9px;
+                        padding: 0.5rem;
+                    }
+
+        @media only screen and (min-width: 501px)
+            {
+                .mobile-nav
+                    {display: none;}
+            }
+        @media only screen and (max-width: 500px)
+            {
+                .main-nav{
+                    display: none;}
+            }
+    .menu-wrap
+        {
+            position: fixed;
+            top: 0;
+            right: 239px;
+            z-index: 1;
+        
+
+        .toggler
+            {
+                position: absolute;
+                top: 17px;
+                right: -212px;
+                z-index: 2;
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+                opacity: 0;
+            }
+
+        .hamburger
+            {
+                position: absolute;
+                top: 0;
+                right: -227px;
+                z-index: 1;
+                width: 60px;
+                height: 60px;
+                padding: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            
+
+            div
+                {
+                    position: relative;
+                    width: 100%;
+                    height: 2px;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.4s ease;
+                }
+
+            
+            }
+            div:before, :after
+                {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    top: -10px;
+                    width: 100%;
+                    height: 2px;
+                    background: inherit;
+                }
+
+            div:after
+                {
+                    top: 10px;
+                }
+
+            
+
+        .toggler:checked + .hamburger > div
+            {
+                transform: rotate(135deg);
+            }
+
+        .toggler:checked + .hamburger > div:before,
+        .toggler:checked + .hamburger > div:after
+            { 
+                top: 0;
+                transform: rotate(90deg);
+            }
+
+        .toggler:checked ~ .menu
+            {
+                visibility: visible;
+            
+            
+                div
+                    {
+                        transform: scale(1);
+                        transition-duration: scale 1.5s ease;
+                    
+
+                        div
+                            {
+                                opacity: 1;
+                                transition: opacity 0.4s ease;
+                            }
+                    }
+            }
+
+        .menu
+            {
+                position: fixed;
+                top: 0;
+                right: 0px;
+                width: 100%;
+                height: 100%;
+                visibility: hidden;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            
+
+            div
+                {
+                    background-color: #10284b;
+                    opacity: 0.9;
+                    border-radius: 50%;
+                    width: 200vw;
+                    height: 200vw;
+                    display: flex;
+                    flex: none;
+                    align-items: center;
+                    justify-content: center;
+                    transform: scale(0);
+                    transition: all 0.4s ease;
+                
+
+                div
+                    {
+                        max-width: 90vw;
+                        max-height: 100vw;
+                        opacity: 0;
+                        transition: opacity 0.4s ease;
+
+                        ul
+                            {
+
+                        
+                                li
+                                    {
+                                        list-style: none;
+                                        color: white;
+                                        font-size: 1.5rem;
+                                        padding: 1rem;
+                                    
+
+                                        a
+                                            {
+                                                font-family: "Space Mono", monospace;
+                                                text-decoration: none;
+                                                color: #b5b9c0;
+                                                transition: color 0.4s ease;
+                                            
+
+                                                span
+                                                    {
+                                                        color: #24e7fc;
+                                                    }
+                                            }
+                                    }
+                        
+                            }
+                    }
+                }
+            }
+        }
+    }
+    .main-container
+        {
+            width: 80rem;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+        
+
+        @media only screen and (max-width: 500px)
+            {
+                max-width: 13em;
+                // margin-left: 5em
+            }
+
+        
+
+        .about-container
+            {
+                @media only screen and (max-width: 500px)
+                    {
+                        margin-top: 6em;
+                        width: 13em;
+                    }
+            
+        
+        h4
+            {
+                font-family: "Space Mono", monospace;
+                margin: 0px;
+                width: 50rem;
+                color: #24e7fc;
+
+                @media only screen and (max-width: 500px)
+                    {
+                        font-size: 0.8rem;
+                        width: 10rem;
+                    }
+            }
+        
+        h1
+            {
+                font-family: "Work Sans", sans-serif;
+                font-size: 6em;
+                margin: 0px;
+                width: 50rem;
+                opacity: 0.7;
+            
+
+            @media only screen and (max-width: 500px)
+                {
+                    width: 15rem;
+                    font-size: 2.4em;
+                }
+            }
+        h3
+            {
+                font-family: "Space Mono", monospace;
+                font-size: 3rem;
+                margin: 0px;
+                opacity: 0.5;
+            
+
+                @media only screen and (max-width: 500px)
+                    {
+                        font-size: .8rem;
+                        width: 20em;
+                    }
+            }
+
+        p
+            {
+                font-size: 1.2em;
+                font-family: "Space Mono", monospace;
+                margin: 0px;
+                margin-top: 2rem;
+                width: 50rem;
+                opacity: 0.5;
+            
+
+                @media only screen and (max-width: 500px)
+                    {
+                        font-size: 1em;
+                        width: 16rem;
+                    }
+
+            }
+            }
+        
+    .skills-container
+        {
+            margin-top: 1rem;
+        
+
+            @media only screen and (max-width: 500px)
+                {
+                    width: 13rem;
+                }
+        
+
+            h1
+                {
+                    margin-bottom: 0;
+                    font-size: 2.5em;
+                    margin-top: 1.5em;
+                    opacity: 0.7;
+                    font-family: "Work Sans", sans-serif;
+                
+
+                    @media only screen and (max-width: 500px)
+                        {
+                            width: 7rem;
+                            font-size: 2em;
+                        }
+
+                }
+            
+            ul
+                {
+                    font-size: 3em;
+                    list-style-type: none;
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    padding-top: 0.4em;
+                    width: 50rem;
+                    flex-wrap: wrap;
+
+                    @media only screen and (max-width: 500px) 
+                        {
+                            width: 19rem;
+                        }
+                }
+
+                li
+                    {
+                        padding: 0.5em;
+                        padding-top: 0;
+                        padding-bottom: 3rem;
+                    }
+
+                    .fa-html5
+                        {color: #ff7000;}
+                    
+                    .fa-css3-alt
+                        {color: #4b97ff;}
+
+                    .fa-js
+                        {color: #f7df00;
+                        background-color: black;}
+                    
+                    .fa-react
+                        {color: #52e3ff;}
+
+                    .lessLogo
+                        {
+                            filter: invert(70%) sepia(1%) saturate(3091%) hue-rotate(297deg) brightness(147%) contrast(129%);
+                       
+                            @media only screen and (max-width: 500px) 
+                                {
+                                  width: 60px;  
+                                }
+                            
+                        }
+
+                    .redux, .sassLogo 
+                        {
+                            @media only screen and (max-width: 500px) 
+                                {
+                                  width: 46px;  
+                                }
+                        }
+                    img
+                        {
+                            width: 55px;
+
+                            @media only screen and (max-width: 500px)
+                                {
+                                    width: 35px;
+                                }
+                        }
+
+        }
+
+    .social-container
+        {
+            width: 40px;
+            position: fixed;
+            bottom: 0px;
+            left: 40px;
+            right: auto;
+            z-index: 10;
+            font-size: 1.5rem;
+
+            @media only screen and (max-width: 500px)
+                {
+                    left: 18px;
+                } 
+        
+
+        .fab 
+            {
+                color: white;
+            }
+
+        .fas
+            {
+                color: white;
+                font-weight: 900;
+            }
+
+        ul
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+            
+
+            li
+                {
+                    padding-left: 1em;
+                    padding-right: 1em;
+                }
+
+            li ::after
+                {content: "";
+                display: block;
+                width: 1px;
+                height: 50px;
+                margin: 0px auto;
+                background-color: white;}
+
+                i 
+                    {font-weight: 400;}
+
+            }
+        }
+    .projects-container
+        {
+            display: flex;
+            width: 50rem;
+            margin: 0 auto;
+            justify-content: space-between;
+            flex-direction: column;
+            font-family: "Work Sans", sans-serif;
+        
+
+            @media only screen and (max-width: 500px)
+                { 
+                    width: 13rem;
+                }
+        
+
+        h1
+            {
+                padding-bottom: .2em;
+                font-size: 2.5em;
+                width: 50rem;
+                margin: 0 auto;
+                opacity: 0.7;
+                font-family: "Work Sans", sans-serif;
+
+                @media only screen and (max-width: 500px)
+                    {
+                        font-size: 2em;
+                        width: 13rem;
+                    }
+            }
+
+        .idv-project
+            {
+                border-top: 3px solid #24e7fc;
+                margin-bottom: 1.5rem;
+
+                @media only screen and (max-width: 500px)
+                    {
+                        width: 17em;
+                    }
+            
+
+            .title-container
+                {
+                    display: flex;
+                    align-items: baseline;
+                    font-size: 1.5rem;
+                    font-family: 'Roboto', sans-serif;
+                    opacity: .8;
+                    padding-top: .5em;
+                
+
+                h4
+                    {
+                        font-size: 1.5rem;
+                        color: #24e7fc;
+                        margin-bottom: 0px;
+                        width: 4rem;
+                        font-family: 'Roboto', sans-serif;
+                    }
+
+                h5
+                    {
+                        margin-top: 0.5rem;
+                        margin-bottom: 1rem;
+                        font-size: 1.4rem;
+                        line-height: 1.8rem;
+                        font-family: 'Roboto', sans-serif;
+
+                        @media only screen and (max-width: 500px)
+                            {
+                                font-size: 1.2rem;
+                            }
+                    }
+                }
+        
+        .projects-img-container
+            {
+                display: flex;
+                justify-content: space-between;
+
+                @media only screen and (max-width: 500px)
+                    {
+                        width: 12em;
+                    }
+            
+            
+            img
+                { 
+                    width: 30%;
+                    border-radius: 17px;
+                
+
+                @media only screen and (max-width: 500px)
+                    {
+                        width: 50vw;
+                        height: 40vw;
+                    }
+                }
+            }
+
+        .gp-img
+            {
+                flex-wrap: wrap;
+            }
+
+        .project-info
+            .description-container
+                {
+                    margin-top: 1rem;
+                
+
+                h4
+                    {
+                        font-size: 1.5rem;
+                        color: #24e7fc;
+                        margin-bottom: 0px;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    
+                p
+                    {
+                        width: 45rem;
+                        margin-top: 0.5rem;
+                        font-size: 1rem;
+                        opacity: .8;
+                        line-height: 1.8rem;
+                        font-family: 'Roboto', sans-serif;
+                    
+
+                    @media only screen and (max-width: 500px)
+                        {
+                            width: 16rem;
+                        }
+                    }
+                }
+
+            .github
+                {
+                    font-family: 'Roboto', sans-serif;
+                    opacity: .8;
+                span 
+                    {
+                        font-weight: 700;
+                        font-size: 1.02rem;
+                        text-decoration: underline;
+                    }
+                
+                a
+                    {
+                        color: #24e7fc;
+                        text-decoration: none;
+                    }
+                }
+                    
+                
+            .deploy
+                {
+                    font-family: 'Roboto', sans-serif;
+                    opacity: .8;
+                    
+                span 
+                    {
+                        font-weight: 700;
+                        font-size: 1.02rem;
+                        text-decoration: underline;
+                    }
+                
+
+                a
+                    {
+                        color: #24e7fc;
+                        text-decoration: none;
+                    }
+                }
+
+            
+        }
+    }
+    #contact
+        {
+            display: flex;
+            width: 50rem;
+            margin: 0 auto;
+            justify-content: space-between;
+            flex-direction: column;
+            font-family: "Work Sans", sans-serif;
+        
+
+        @media only screen and (max-width: 500px)
+            {
+                width: 17rem;
+            }
+
+        h1
+            {
+                margin-top: 3em;
+                padding-bottom: .2em;
+                font-size: 2.5em;
+                width: 50rem;
+                opacity: 0.7;
+                font-family: "Work Sans", sans-serif;
+
+                @media only screen and (max-width: 500px)
+                    {
+                        margin-top: 1em;
+                        font-size: 2em;
+                        width: 8rem;
+                    }
+            }
+
+        form
+            {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            
+
+            input
+                {
+                    font-size: 1.4em;
+                    margin-bottom: 1em;
+                    border-radius: 17px;
+                    height: 3em;
+                    padding-left: 0.5em;
+
+                    @media only screen and (max-width: 500px)
+                        {
+                            font-size: 1.2em;
+                        }
+                }
+
+            textarea
+                {
+                    font-size: 1.4em;
+                    border-radius: 10px;
+                    padding-left: .5em;
+                    padding-top: .5em;
+                    font-family: 'Roboto';
+
+                    @media only screen and (max-width: 500px)
+                        {
+                            font-size: 1.2em;
+                        }
+                }
+
+            button
+                {
+                    width: 39%;
+                    margin: 0 auto;
+                    border-radius: 10px;
+                    height: 2em;
+                    margin-top: 1em;
+                    background-color: #24e7fc;
+                    border: none;
+                    color: white;
+                    font-family: 'Roboto';
+                    font-size: 1.3em;
+
+                    @media only screen and (max-width: 500px)
+                        {
+                            width: 75%;
+                        }
+                }
+            }
+        }
+    }
+}
+}
