@@ -531,6 +531,9 @@ html {
                     .project-info .description-container {
                         margin-top: 1rem;
 
+                        .tech-div{
+                            margin-bottom: 3rem;
+                        }
 
                         h4 {
                             font-size: 1.5rem;
@@ -540,10 +543,11 @@ html {
                         }
 
                         h5 {
-                            font-size: 1.1rem;
+                            font-size: 1.5rem;
                             opacity: .8;
                             font-family: 'Roboto', sans-serif;
                             margin-bottom: 0;
+                            color: #24e7fc;
                         }
 
                         li {

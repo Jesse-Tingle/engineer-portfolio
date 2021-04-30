@@ -452,6 +452,9 @@ html body .main-container .projects-container .idv-project .gp-img {
 html body .main-container .projects-container .idv-project .project-info .description-container {
   margin-top: 1rem;
 }
+html body .main-container .projects-container .idv-project .project-info .description-container .tech-div {
+  margin-bottom: 3rem;
+}
 html body .main-container .projects-container .idv-project .project-info .description-container h4 {
   font-size: 1.5rem;
   color: #24e7fc;
@@ -459,10 +462,11 @@ html body .main-container .projects-container .idv-project .project-info .descri
   font-family: "Roboto", sans-serif;
 }
 html body .main-container .projects-container .idv-project .project-info .description-container h5 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   opacity: 0.8;
   font-family: "Roboto", sans-serif;
   margin-bottom: 0;
+  color: #24e7fc;
 }
 html body .main-container .projects-container .idv-project .project-info .description-container li {
   font-size: 1rem;
